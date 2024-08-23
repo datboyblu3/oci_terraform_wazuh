@@ -5,6 +5,15 @@
 # maintenance.
 ######################################################################################
 
+
+resource "oci_identity_compartment" "tf-compartment" {
+    # Required
+    compartment_id = "<tenancy-ocid>"
+    description = "Compartment for Terraform resources."
+    name = "<your-compartment-name>"
+}
+
+
 resource "oci_core_public_ip" "test_public_ip" {
     #Required
     compartment_id = var.compartment_id
@@ -17,8 +26,6 @@ resource "oci_core_public_ip" "test_public_ip" {
     private_ip_id = oci_core_private_ip.test_private_ip.id
     public_ip_pool_id = oci_core_public_ip_pool.test_public_ip_pool.id
 }
-
-
 
 resource "oci_core_private_ip" "test_private_ip" {
 
