@@ -23,8 +23,7 @@ Using Terraform to automate the deployment of the Wazuh architecture: Indexer, S
 
 ## High Level Diagram
 
-![image](https://github.com/user-attachments/assets/f6a5646a-3aae-4126-aee6-e2a55967e37b)
-
+![image](https://github.com/user-attachments/assets/21a67bfc-177c-4c79-af87-9d238cad403a)
 
 ## Usage
 
