@@ -21,6 +21,11 @@ Using Terraform to automate the deployment of the Wazuh architecture: Indexer, S
 ├── configure-dashboard.yml <- dashboard installation commands
 ```
 
+## High Level Diagram
+
+![image](https://github.com/user-attachments/assets/f6a5646a-3aae-4126-aee6-e2a55967e37b)
+
+
 ## Usage
 
 This directory is a self contained production ready environment. You can clone
