@@ -1,3 +1,10 @@
+######################################################################################
+# Create a Virtual Cloud Network for Wazuh to operate in the compartment.
+# This will also create a Subnet into the Virtual Network.
+# The subnet will be deployed separately from the Virtual 
+# Network for ease of maintenance.
+######################################################################################
+
 resource "oci_core_vcn" "vcn" {
     compartment_id = var.compartment_id
     cidr_blocks    = "10.0.0.0/16"
